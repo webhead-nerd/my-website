@@ -33,19 +33,28 @@ export default function MobileNotice() {
   const section = getSection(pathname);
   const styles = noticeStyles[section];
 
+  // Blog slug pages (e.g. /blog/some-post) never show the notice.
+  // Note: this only affects the notice's visibility on this specific
+  // mount — since this effect runs once on mount (not on every
+  // pathname change), landing directly on a blog slug hides it for
+  // that load, but if you'd started elsewhere and it's already shown,
+  // navigating into a slug won't retroactively hide it (there's
+  // nothing to hide, it only ever shows once per load anyway).
+  const isBlogSlug = pathname.startsWith("/blog/");
+
   useEffect(() => {
     const isMobile = window.innerWidth < 768;
-    const dismissed = sessionStorage.getItem(`mobileNoticeDismissed:${pathname}`);
-    if (isMobile && !dismissed) {
+    if (isMobile && !isBlogSlug) {
       setShow(true);
-    } else {
-      setShow(false);
     }
-  }, [pathname]);
+    // Empty dependency array — runs once per full page load/reload,
+    // not on every client-side route change, so switching sections
+    // via the navbar no longer re-triggers the popup.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const dismiss = () => {
     setShow(false);
-    sessionStorage.setItem(`mobileNoticeDismissed:${pathname}`, "true");
   };
 
   if (!show) return null;
