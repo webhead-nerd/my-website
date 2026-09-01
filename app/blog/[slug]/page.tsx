@@ -111,7 +111,7 @@ export default async function BlogPost({
           <div className="space-y-5">
             {sidebarPosts.map((p) => (
               <Link key={p.slug} href={`/blog/${p.slug}`} className="block group">
-                <div className="relative w-full h-28 rounded overflow-hidden mb-2">
+                <div className="relative w-full aspect-[1620/1080] rounded overflow-hidden mb-2">
                   <Image
                     src={p.thumbnail}
                     alt={p.title}

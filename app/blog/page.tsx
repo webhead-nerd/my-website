@@ -18,7 +18,7 @@ export default function Blog() {
       {/* Masthead — using the design image directly as background */}
       <div className="relative w-full">
         <Image
-          src="/images/blog.header.webp"
+          src="/images/blog.webp"
           alt="Geosmin & Cigarettes — welcome to my blog"
           width={1920}
           height={640}

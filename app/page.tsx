@@ -3,11 +3,11 @@ import { FaInstagram, FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
 const socials = [
-  { icon: FaYoutube, href: "https://youtube.com/@yourchannel", label: "YouTube" },
-  { icon: FaInstagram, href: "https://instagram.com/yourusername", label: "Instagram" },
+  { icon: FaYoutube, href: "https://youtube.com/@vishalgunra", label: "YouTube" },
+  { icon: FaInstagram, href: "https://instagram.com/vishalgunra", label: "Instagram" },
   { icon: SiGmail, href: "mailto:vishal.gunra@gmail.com", label: "Email" },
-  { icon: FaLinkedin, href: "https://linkedin.com/in/yourusername", label: "LinkedIn" },
-  { icon: FaGithub, href: "https://github.com/yourusername", label: "GitHub" },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/in/vishalgunra/", label: "LinkedIn" },
+  { icon: FaGithub, href: "https://github.com/webhead-nerd", label: "GitHub" },
 ];
 
 export default function Home() {

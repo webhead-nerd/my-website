@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -7,6 +7,11 @@ import MobileNotice from "@/components/Mobile.Notice";
 export const metadata: Metadata = {
   title: "Vishal Gunra",
   description: "Portfolio, blog, and a bit about me",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
