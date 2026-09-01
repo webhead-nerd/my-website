@@ -35,7 +35,7 @@ const posts: Record<string, Post> = {
       { type: "paragraph", text: "There's always benefit to be had from productivity, and planning your future and working towards is an absolute, and it is a given that there'll always be struggles that will knock you down. So have fun whenever you can. Take a soak in the rain, call up a friend and catch up, start a new hobby or get back to an old one, go out with no agenda and see where you end up." },
       { type: "paragraph", text: "If struggle is a certainty in life, then make joy and happiness just as certain - And carry that light with you." },
       { type: "image", src: "/images/fourth.webp", alt: "", aspectRatio: "4000/3000" },
-      { type: "paragraph", text: "Thanks for reading my first ever post!! Hope you like it and I hope you'll look forward to what I do in the future 😋" },
+      { type: "paragraph", text: "Thanks for reading my first ever post!! Hope you like it and I hope you'll look forward to what I do in the future! 😋" },
     ],
   },
 };
