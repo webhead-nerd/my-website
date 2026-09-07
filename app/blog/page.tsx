@@ -6,7 +6,7 @@ const posts = [
     slug: "life-is-fun-actually",
     title: "Life is fun, actually.",
     date: "September 1, 2026",
-    author: "- By Vishal",
+    author: "- Vishal",
     excerpt: "Life is fun. There's a lot to do, learn and experience. It's not all sunshine and rainbows though. There's hardships, and good times. There has to be. They are what add weight to life…",
     thumbnail: "/images/thumbnail.webp",
   },
